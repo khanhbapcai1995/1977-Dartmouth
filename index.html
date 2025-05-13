@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1977 Dartmouth</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .topbar {
+      background-color: #f8f9fa;
+      font-size: 14px;
+    }
+    .topbar a {
+      color: #000;
+      text-decoration: none;
+      padding: 0 10px;
+    }
+    .main-navbar {
+      background-color: #006616;
+    }
+    .main-navbar .nav-link {
+      color: white !important;
+    }
+
+    .donation-cards img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .video-section iframe {
+      width: 100%;
+      height: 400px;
+    }
+    .footer {
+      background-color: #003366;
+      color: white;
+    }
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .donation-card {
+      background-color: #c8e0ff;
+      border: none;
+      padding: 0.5rem;
+      height: 100%;
+    }
+
+    .donation-title {
+      color: #0893c5;
+      font-weight: 700;
+      font-size: 1rem;
+      margin-top: 1rem;
+      text-transform: uppercase;
+    }
+
+    .donation-desc {
+      color: #555;
+      font-size: 0.95rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .donation-price {
+      color: #d51c5a;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    .donation-price span {
+      font-size: 0.8rem;
+      font-weight: 400;
+    }
+
+    .donation-btn {
+      background-color: #d51c5a;
+      color: white;
+      font-weight: 600;
+      padding: 0.5rem 1.5rem;
+      border: none;
+    }
+
+    .donation-meta {
+      font-size: 0.85rem;
+      color: #444;
+      margin-top: 0.5rem;
+    }
+
+    .progress {
+      height: 6px;
+      margin-top: 0.3rem;
+    }
+
+    .progress-bar {
+      background-color: #d51c5a;
+    }
+
+    .icon-arrow {
+      color: #00AEEF;
+      font-size: 1rem;
+      display: inline-block;
+      margin: 0.3rem 0;
+    }
+
+    /* Carousel controls outside */
+    .carousel-wrapper {
+      position: relative;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 50px;
+      height: 50px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #000;
+      border-radius: 50%;
+      opacity: 1;
+    }
+
+    .carousel-control-prev {
+      left: -60px;
+    }
+
+    .carousel-control-next {
+      right: -60px;
+    }
+    .text-container {
+      background-color: #e0fae4; /* Màu nền nhẹ */
+    }
+
+    .text-container p {
+      font-family: 'Arial', sans-serif; /* Phông chữ */
+      font-size: 20px; /* Kích thước chữ */
+      color: #00AEEF; /* Màu chữ */
+      line-height: 1.5; /* Khoảng cách giữa các dòng */
+      text-align: center; /* Căn giữa chữ */
+    }
+
+    @media (max-width: 768px) {
+      .carousel-control-prev,
+      .carousel-control-next {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+    <!-- Topbar -->
+    <div class="topbar py-2 text-center">
+        <div class="container d-flex justify-content-between">
+        <div>
+            <a href="#">My Account</a>
+            <a href="#">Cart</a>
+        </div>
+        <div>
+            <a href="#">EN</a>
+        </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg main-navbar">
+        <div class="container">
+        <a class="navbar-brand text-white" href="https://givebutter.com/LsobDK">1977 Dartmouth</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="https://givebutter.com/LsobDK">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://givebutter.com/LsobDK">Zakat</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://givebutter.com/LsobDK">Appeals</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://givebutter.com/LsobDK">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://givebutter.com/LsobDK">Legacy</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <div id="demo" class="carousel slide container" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner" style="border-radius: 10px;margin-top: 10px;">
+      <a href="https://givebutter.com/LsobDK">
+        <div class="carousel-item active">
+            <img src="https://res.cloudinary.com/kbconline/image/upload/v1747146135/maxresdefault_3_gc4iap.jpg" alt="Los Angeles" class="d-block" style="width:100%; height: 600px;">
+        </div>
+        <div class="carousel-item">
+            <img src="https://res.cloudinary.com/kbconline/image/upload/v1747146135/494176904_1271704954146548_1244951681863420447_n_huyyzj.jpg" alt="Chicago" class="d-block" style="width:100%; height: 600px;">
+        </div>
+        <div class="carousel-item">
+            <img src="https://res.cloudinary.com/kbconline/image/upload/v1747146135/maxresdefault_8_ijbld3.jpg" alt="New York" class="d-block" style="width:100%; height: 600px;">
+        </div>
+      </a>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+    </div>
+
+    <div class="d-flex justify-content-center py-5">
+      <a href="https://givebutter.com/LsobDK">
+        <button class="btn btn-primary text-white fw-bold px-4 py-2" style="background-color: #00AEEF; border: none;">
+          Give Your Zakat to Gaza
+        </button>
+      </a>
+    </div>
+
+    <div class="text-container">
+      <div class="container py-5 position-relative">
+        <div class="carousel-wrapper">
+          <div id="donationCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+      
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                <div class="row row-cols-1 row-cols-md-4 g-3">
+                  <div class="col">
+                    <div class="card donation-card">
+                      <img src="https://res.cloudinary.com/kbconline/image/upload/v1747146135/maxresdefault_8_ijbld3.jpg" class="card-img-top" alt="...">
+                      <div class="card-body text-center">
+                        <div class="donation-title">GIVE 3000 LITRES OF WATER TO GAZA</div>
+                        <div class="donation-desc">Water is life, and right now, many in Gaza are struggling to access it.</div>
+                        <div class="donation-price">$750 <span>USD</span></div>
+                        <a href="https://givebutter.com/LsobDK">
+                          <button class="btn donation-btn mt-2">DONATE NOW</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card donation-card">
+                      <img src="https://res.cloudinary.com/kbconline/image/upload/v1747146135/maxresdefault_8_ijbld3.jpg" class="card-img-top" alt="...">
+                      <div class="card-body text-center">
+                        <div class="donation-title">GIVE 750 LITRES OF WATER TO GAZA</div>
+                        <div class="donation-desc">A little goes a long way — 750 litres of fresh water water water water...</div>
+                        <div class="donation-price">$201 <span>USD</span></div>
+                        <a href="https://givebutter.com/LsobDK">
+                          <button class="btn donation-btn mt-2">DONATE NOW</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card donation-card">
+                      <img src="https://res.cloudinary.com/kbconline/image/upload/v1747146135/494176904_1271704954146548_1244951681863420447_n_huyyzj.jpg" class="card-img-top" alt="...">
+                      <div class="card-body text-center">
+                        <div class="donation-title">Gaza New Born Babies</div>
+                        <div class="donation-desc">Provide essential supplies for infants and mothers.</div>
+                        <div class="donation-meta text-start">
+                          <strong>1411</strong> Supporters, <strong>23</strong> days left
+                          <div class="progress">
+                            <div class="progress-bar" style="width: 6.6%"></div>
+                          </div>
+                          <div class="mt-1">
+                            <strong>$66.006</strong><span> USD</span><br>
+                            Raised of <strong>$1.000.000</strong> Goal
+                          </div>
+                        </div>
+                        <a href="https://givebutter.com/LsobDK">
+                          <button class="btn donation-btn w-100 mt-3">DONATE</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card donation-card">
+                      <img src="https://res.cloudinary.com/kbconline/image/upload/v1747146135/maxresdefault_3_gc4iap.jpg" class="card-img-top" alt="...">
+                      <div class="card-body text-center">
+                        <div class="donation-title">Support Orphans in Gaza</div>
+                        <div class="donation-desc">Your support can be the lifeline they need...</div>
+                        <div class="donation-meta text-start">
+                          <strong>6223</strong> Supporters, <strong>29</strong> days left
+                          <div class="progress">
+                            <div class="progress-bar" style="width: 48.9%"></div>
+                          </div>
+                          <div class="mt-1">
+                            <strong>$489.611</strong><span> USD</span><br>
+                            Raised of <strong>$1.000.000</strong> Goal
+                          </div>
+                        </div>
+                        <a href="https://givebutter.com/LsobDK">
+                          <button class="btn donation-btn w-100 mt-3">DONATE</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <div class="row row-cols-1 row-cols-md-4 g-3">
+                              <div class="col">
+                                <div class="card donation-card">
+                                  <img src="https://res.cloudinary.com/kbconline/image/upload/v1747146135/maxresdefault_9_avmr3q.jpg" class="card-img-top" alt="...">
+                                  <div class="card-body text-center">
+                                    <div class="donation-title">GIVE 3000 LITRES OF WATER TO GAZA</div>
+                                    <div class="donation-desc">Water is life, and right now, many in Gaza are struggling to access it.</div>
+                                    <div class="donation-price">$750 <span>USD</span></div>
+                                    <a href="https://givebutter.com/LsobDK">
+                                      <button class="btn donation-btn mt-2">DONATE NOW</button>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card donation-card">
+                                  <img src="https://res.cloudinary.com/kbconline/image/upload/v1747146135/maxresdefault_9_avmr3q.jpg" class="card-img-top" alt="...">
+                                  <div class="card-body text-center">
+                                    <div class="donation-title">GIVE 750 LITRES OF WATER TO GAZA</div>
+                                    <div class="donation-desc">A little goes a long way — 750 litres of fresh water water water water...</div>
+                                    <div class="donation-price">$201 <span>USD</span></div>
+                                    <a href="https://givebutter.com/LsobDK">
+                                      <button class="btn donation-btn mt-2">DONATE NOW</button>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card donation-card">
+                                  <img src="https://res.cloudinary.com/kbconline/image/upload/v1747146135/maxresdefault_9_avmr3q.jpg" class="card-img-top" alt="...">
+                                  <div class="card-body text-center">
+                                    <div class="donation-title">Gaza New Born Babies</div>
+                                    <div class="donation-desc">Provide essential supplies for infants and mothers.</div>
+                                    <div class="donation-meta text-start">
+                                      <strong>1411</strong> Supporters, <strong>23</strong> days left
+                                      <div class="progress">
+                                        <div class="progress-bar" style="width: 6.6%"></div>
+                                      </div>
+                                      <div class="mt-1">
+                                        <strong>$66.006</strong><span> USD</span><br>
+                                        Raised of <strong>$1.000.000</strong> Goal
+                                      </div>
+                                    </div>
+                                    <a href="https://givebutter.com/LsobDK">
+                                      <button class="btn donation-btn w-100 mt-3">DONATE</button>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card donation-card">
+                                  <img src="https://res.cloudinary.com/kbconline/image/upload/v1747146135/maxresdefault_7_athsd3.jpg" class="card-img-top" alt="...">
+                                  <div class="card-body text-center">
+                                    <div class="donation-title">Support Orphans in Gaza</div>
+                                    <div class="donation-desc">Your support can be the lifeline they need...</div>
+                                    <div class="donation-meta text-start">
+                                      <strong>6223</strong> Supporters, <strong>29</strong> days left
+                                      <div class="progress">
+                                        <div class="progress-bar" style="width: 48.9%"></div>
+                                      </div>
+                                      <div class="mt-1">
+                                        <strong>$489.611</strong><span> USD</span><br>
+                                        Raised of <strong>$1.000.000</strong> Goal
+                                      </div>
+                                    </div>
+                                    <a href="https://givebutter.com/LsobDK">
+                                      <button class="btn donation-btn w-100 mt-3">DONATE</button>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+      
+            </div>
+      
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#donationCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#donationCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="d-flex justify-content-center">
+        
+        <a href="https://givebutter.com/LsobDK">
+          <button class="btn btn-primary text-white fw-bold px-4 py-2" style="background-color: #09bb20; border: none;">
+            MOST NEEDED
+          </button>
+        </a>
+      </div>
+    
+      <div class="container py-5 position-relative">
+        <div class="carousel-wrapper">
+          <div id="donationCarousel1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+      
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                <div class="row row-cols-1 row-cols-md-4 g-3">
+                  <div class="col">
+                    <div class="card donation-card">
+                      <img src="https://res.cloudinary.com/kbconline/image/upload/v1747146135/maxresdefault_2_lldpsh.jpg" class="card-img-top" alt="...">
+                      <div class="card-body text-center">
+                        <div class="donation-title">GIVE 3000 LITRES OF WATER TO GAZA</div>
+                        <div class="donation-desc">Water is life, and right now, many in Gaza are struggling to access it.</div>
+                        <div class="donation-price">$750 <span>USD</span></div>
+                        <a href="https://givebutter.com/LsobDK">
+                          <button class="btn donation-btn mt-2">DONATE NOW</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card donation-card">
+                      <img src="https://res.cloudinary.com/kbconline/image/upload/v1747146135/maxresdefault_2_lldpsh.jpg" class="card-img-top" alt="...">
+                      <div class="card-body text-center">
+                        <div class="donation-title">GIVE 750 LITRES OF WATER TO GAZA</div>
+                        <div class="donation-desc">A little goes a long way — 750 litres of fresh water water water water...</div>
+                        <div class="donation-price">$201 <span>USD</span></div>
+                        <a href="https://givebutter.com/LsobDK">
+                          <button class="btn donation-btn mt-2">DONATE NOW</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card donation-card">
+                      <img src="https://res.cloudinary.com/kbconline/image/upload/v1747146134/maxresdefault_10_tzzhgx.jpg" class="card-img-top" alt="...">
+                      <div class="card-body text-center">
+                        <div class="donation-title">Gaza New Born Babies</div>
+                        <div class="donation-desc">Provide essential supplies for infants and mothers.</div>
+                        <div class="donation-meta text-start">
+                          <strong>1411</strong> Supporters, <strong>23</strong> days left
+                          <div class="progress">
+                            <div class="progress-bar" style="width: 6.6%"></div>
+                          </div>
+                          <div class="mt-1">
+                            <strong>$66.006</strong><span> USD</span><br>
+                            Raised of <strong>$1.000.000</strong> Goal
+                          </div>
+                        </div>
+                        <a href="https://givebutter.com/LsobDK">
+                          <button class="btn donation-btn w-100 mt-3">DONATE</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card donation-card">
+                      <img src="https://res.cloudinary.com/kbconline/image/upload/v1747146134/maxresdefault_10_tzzhgx.jpg" class="card-img-top" alt="...">
+                      <div class="card-body text-center">
+                        <div class="donation-title">Support Orphans in Gaza</div>
+                        <div class="donation-desc">Your support can be the lifeline they need...</div>
+                        <div class="donation-meta text-start">
+                          <strong>6223</strong> Supporters, <strong>29</strong> days left
+                          <div class="progress">
+                            <div class="progress-bar" style="width: 48.9%"></div>
+                          </div>
+                          <div class="mt-1">
+                            <strong>$489.611</strong><span> USD</span><br>
+                            Raised of <strong>$1.000.000</strong> Goal
+                          </div>
+                        </div>
+                        <a href="https://givebutter.com/LsobDK">
+                          <button class="btn donation-btn w-100 mt-3">DONATE</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="row row-cols-1 row-cols-md-4 g-3">
+                      <div class="col">
+                        <div class="card donation-card">
+                          <img src="https://res.cloudinary.com/kbconline/image/upload/v1747146133/maxresdefault_5_nauqaq.jpg" class="card-img-top" alt="...">
+                          <div class="card-body text-center">
+                            <div class="donation-title">GIVE 3000 LITRES OF WATER TO GAZA</div>
+                            <div class="donation-desc">Water is life, and right now, many in Gaza are struggling to access it.</div>
+                            <div class="donation-price">$750 <span>USD</span></div>
+                            <a href="https://givebutter.com/LsobDK">
+                              <button class="btn donation-btn mt-2">DONATE NOW</button>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card donation-card">
+                          <img src="https://res.cloudinary.com/kbconline/image/upload/v1747146133/maxresdefault_14_lhgicu.jpg" class="card-img-top" alt="...">
+                          <div class="card-body text-center">
+                            <div class="donation-title">GIVE 750 LITRES OF WATER TO GAZA</div>
+                            <div class="donation-desc">A little goes a long way — 750 litres of fresh water water water water...</div>
+                            <div class="donation-price">$201 <span>USD</span></div>
+                            <a href="https://givebutter.com/LsobDK">
+                              <button class="btn donation-btn mt-2">DONATE NOW</button>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card donation-card">
+                          <img src="https://res.cloudinary.com/kbconline/image/upload/v1747146133/maxresdefault_15_h33atw.jpg" class="card-img-top" alt="...">
+                          <div class="card-body text-center">
+                            <div class="donation-title">Gaza New Born Babies</div>
+                            <div class="donation-desc">Provide essential supplies for infants and mothers.</div>
+                            <div class="donation-meta text-start">
+                              <strong>1411</strong> Supporters, <strong>23</strong> days left
+                              <div class="progress">
+                                <div class="progress-bar" style="width: 6.6%"></div>
+                              </div>
+                              <div class="mt-1">
+                                <strong>$66.006</strong><span> USD</span><br>
+                                Raised of <strong>$1.000.000</strong> Goal
+                              </div>
+                            </div>
+                            <a href="https://givebutter.com/LsobDK">
+                              <button class="btn donation-btn w-100 mt-3">DONATE</button>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card donation-card">
+                          <img src="https://res.cloudinary.com/kbconline/image/upload/v1747146133/maxresdefault_15_h33atw.jpg" class="card-img-top" alt="...">
+                          <div class="card-body text-center">
+                            <div class="donation-title">Support Orphans in Gaza</div>
+                            <div class="donation-desc">Your support can be the lifeline they need...</div>
+                            <div class="donation-meta text-start">
+                              <strong>6223</strong> Supporters, <strong>29</strong> days left
+                              <div class="progress">
+                                <div class="progress-bar" style="width: 48.9%"></div>
+                              </div>
+                              <div class="mt-1">
+                                <strong>$489.611</strong><span> USD</span><br>
+                                Raised of <strong>$1.000.000</strong> Goal
+                              </div>
+                            </div>
+                            <a href="https://givebutter.com/LsobDK">
+                              <button class="btn donation-btn w-100 mt-3">DONATE</button>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+            </div>
+      
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#donationCarousel1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#donationCarousel1" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="d-flex justify-content-center">
+        <a href="https://givebutter.com/LsobDK">
+          <button class="btn btn-primary text-white fw-bold px-4 py-2" style="background-color: #09bb20; border: none;">
+            Give Your Zakat to Gaza
+          </button>
+        </a>
+      </div>
+    
+      <div class="text-container">
+        <p style="font-weight: 600;margin-top: 50px; padding-bottom: 50px;">
+          Every year, we’re presented with an opportunity: to please Allah SWT. <br>
+          What if this was your final opportunity to make a difference? What if <br>
+          this year was your last chance to give, to fulfill your obligation, <br>
+          and to earn the immense rewards promised by Allah SWT?<br>
+        </p>
+      </div>
+    </div>
+
+
+  <!-- Footer -->
+  <footer class="footer py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>About Us</h5>
+          <p>1977 Dartmouth is a global charity dedicated to helping the most vulnerable communities around the world.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Zakat</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Connect</h5>
+          <p>Follow us on social media for updates.</p>
+        </div>
+      </div>
+      <hr class="border-light">
+      <div class="text-center">&copy; 2025 1977 Dartmouth. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
